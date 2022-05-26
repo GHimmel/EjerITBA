@@ -29,6 +29,24 @@
       );
     }
 
+    function esMasLarga(pal, x) {
+      return pal.length > x;
+    }
+
+    function Descuento(pre, des) {
+      return pre - (pre * des) / 100;
+    }
+
+    function area(r) {
+      return r ** 2 * Math.PI;
+    }
+
+    console.log(area(10));
+
+    console.log(Descuento(100, 75));
+
+    console.log(esMasLarga("hola", 4));
+
     console.log(esBisiesto(2020));
 
     console.log(esDivisiblePor(10, 5));
