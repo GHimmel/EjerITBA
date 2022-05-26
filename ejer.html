@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejer</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("Hello, World!");
+
+    function triple(z) {
+      return z * 3;
+    }
+
+    function Par(x) {
+      return x % 2 === 0;
+    }
+
+    function esDivisiblePor(x, y) {
+      return x % y === 0;
+    }
+
+    function esBisiesto(año) {
+      return (
+        (esDivisiblePor(año, 4) && !esDivisiblePor(año, 100)) ||
+        esDivisiblePor(año, 400)
+      );
+    }
+
+    console.log(esBisiesto(2020));
+
+    console.log(esDivisiblePor(10, 5));
+
+    console.log(Par(7));
+
+    console.log(triple(3));
+  </script>
+</html>
