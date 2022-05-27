@@ -22,3 +22,4 @@ git merge <la rama que quiero unir> : para unir ramas
 git tag -d <la version> : eliminar una version en el local, luego pushear
 ddd
  
+dsdddd
