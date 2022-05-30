@@ -54,5 +54,59 @@
     console.log(Par(7));
 
     console.log(triple(3));
+
+    /* ------------------------------------- */
+    //const cadena = "holanda"
+
+    //console.log(cadena.charAt(2));
+    //console.log(cadena.length);//
+    //console.log(cadena.[7])//
+
+    //console.log(cadena.indexOf("5",1))
+    //console.log(cadena.repeat(10));//
+    //console.log(cadena.charAt(cadena.length-2))
+    //console.log(cadena.slice(2,4))
+    //console.log(cadena.substring(2))
+    //console.log(cadena.substr(2,4))
+    //console.log(cadena + " argentina ")
+    //console.log(cadena.replace( "hola","chau"))
+    //console.log(cadena.toUpperCase())
+    //console.log(cadena,toOvercase())
+    //cadena=cadena[0]+"p"+ cadena.slice(2)
+    //console.log(cadena);
+
+    //function uncFirst (str){
+
+    //let may=str.charAt(0).toUpperCase();
+
+    // return console.log (may+str.slice(1))
+    //}
+
+    //uncFirst("hola")
+
+    //function checkSpam (str){
+
+    //let pa = str.toUpperCase();
+
+    // return pa.includes("XXX")|| pa.includes("VIAGRA");
+
+    //}
+
+    //console.log(checkSpam ("XXX"));
+
+    function truncate(str, maxlength) {
+      return;
+
+      if (str.length > maxlength) str.replace(str.substr(maxlength), "...");
+      else console.log(str);
+    }
+
+    console.log(truncate("holdfdsfsdf555", 8));
+
+    function extractCurrencyValue(ttt) {
+      return +ttt.slice(1);
+    }
+
+    console.log(extractCurrencyValue("$150"));
   </script>
 </html>
