@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejer de Javascript</title>
+  </head>
+  <body>
+    <h1 id="titulo">Seleccion de correos</h1>
+    <p id="bu">buenos</p>
+    <p id="malos">malos</p>
+    <button onclick="lele()">claseficar</button>
+    <script>
+      /* let enunciado = document.querySelector("h1");
+
+
+      if (confirm("hola")) {
+        console.log((enunciado.innerHTML = "hola soy pepe"));
+      } */
+
+      /* var nombre = prompt("nombre");
+      var apellido = prompt("apellido");
+      var edad = prompt("edad");
+      var sueldo = +prompt("sueldo");
+
+      var sueldoNeto = sueldo - sueldo * 0.1;
+      document.write(
+        "hola soy" + nombre + " " + apellido + " y tendo " + edad + " años"
+      );
+      document.write(
+        "mi sueldo es " + sueldo + " pero el neto es " + sueldoNeto
+      ); */
+
+      /* let nobre;
+      let edad;
+      let categoria;
+
+      do {
+        nombre = prompt("ingresar tu nombre");
+        edad = prompt("ingresar tu edad");
+        categoria = prompt("ingrese tu categoria: A2 - B4 - C 6 - F8");
+      } while (confirm("confirmar los datos") == false);
+      document.write(
+        "usted es " +
+          nombre +
+          ", su edad es de: " +
+          edad +
+          " y su categoria es: " +
+          categoria
+      ); */
+
+      /* var dias = new Date();
+      var num = dias.getDay();
+      console.log(num);
+
+      switch (num) {
+        case 1:
+          alert("Hola querido usuario, hoy es domingo.Que tengas un buen dia");
+
+        case 2:
+          alert("Hola querido usuario, hoy es lunes.Que tengas un buen dia");
+        case 3:
+          alert("Hola querido usuario, hoy es martes.Que tengas un buen dia");
+        case 4:
+          alert(
+            "Hola querido usuario, hoy es miercoles.Que tengas un buen dia"
+          );
+        case 5:
+          alert("Hola querido usuario, hoy es jueves.Que tengas un buen dia");
+        case 6:
+          alert("Hola querido usuario, hoy es viernes.Que tengas un buen dia");
+        case 7:
+          alert("Hola querido usuario, hoy es sabado.Que tengas un buen dia");
+      } */
+
+      /* let admi = prompt("cual su rol?");
+      let cont = +prompt("cual su contraseña?");
+
+      if (admi === "admi" || admi === "recursos") {
+        if (cont === 1234) {
+          let nombre = prompt("ingres su nombre");
+          document.write("Hola " + nombre + ", bienvenida a nuestra app");
+        } else {
+          document.write(
+            "Ha habido un erro, pregunte a su supervisor el usuario y la contraseña"
+          );
+        }
+      } else {
+        document.write(
+          "Ha habido un erro, pregunte a su supervisor el usuario y la contraseña"
+        );
+      } */
+
+      /*   do {
+        admi = prompt("cual su rol?");
+      } while (admi == "admi" || admi == "rec");
+
+      do {
+        cont = prompt("cual su contraseña?");
+      } while (cont != "1234"); */
+
+      let correosPendientes = [
+        "ger@gmail.com",
+        "titoelniño.com",
+        "pepe@gmail.com",
+        "pocho.com",
+        "@gmail.com",
+        "lala@gmial.com",
+        "juan.ar",
+      ];
+      let correosBuenos = [];
+      let correosMalos = [];
+
+      function lele() {
+        for (correo of correosPendientes) {
+          /* let correo = correosPendientes; */
+          if (correo.includes("@") && correo.indexOf("@") != 0) {
+            correosBuenos.push(correo);
+            console.log(correo.indexOf(1));
+          } else {
+            correosMalos.push(correo);
+          }
+        }
+        let bmen = document.getElementById("bu");
+        bmen.innerHTML = correosBuenos;
+        let mal = document.getElementById("malos");
+        mal.innerHTML = correosMalos;
+      }
+    </script>
+  </body>
+</html>
