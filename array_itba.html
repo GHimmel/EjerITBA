@@ -10,13 +10,15 @@
     <script>
       let frutas = ["manzana", "banana"];
 
-      console.log(frutas.at(1));
+      console.log(frutas.at());
       frutas.push("pera");
       console.log(frutas);
       console.log(frutas.pop());
       console.log(frutas);
       frutas.push("pera");
       frutas[3] = "durazno";
+      console.log(frutas);
+      frutas.splice(2, 1);
       console.log(frutas);
     </script>
   </body>

@@ -20,6 +20,7 @@ git branch <nombre rama> : para crear una rama
 git log --oneline
 git merge <la rama que quiero unir> : para unir ramas
 git tag -d <la version> : eliminar una version en el local, luego pushear
+git rm <archivo> : elimino de forma remota y local
 ddd
  
 dsdddd
